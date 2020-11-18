@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--Сообщает браузеру как стоит обрабатывать эту страницу-->
+
+<html lang="en">
+<!--Оболочка документа, указывает язык содержимого-->
+
+<!--Заголовок страницы; контейнер для других важных данных (не отображается)-->
+
+<head>
+    <meta charset="UTF-8">
+    <!--Кодировка страницы-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=0" />
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <title>AOD</title>
+    <!--Заголовок страницы в браузере-->
+</head>
+
+<!--Отображаемое тело страницы-->
+
+<body>
+
+    <div class="wrapper">
+        <main class="page">
+            @@include('_header.html', {})
+            <!-- /.header -->
+
+            <div class="fullscreen">
+                <div class="fullscreen__bg ibg">
+                    <img src="img/bg_main.jpg" alt="bg-fullscreen">
+                </div>
+                <!-- /.fullscreen__bg -->
+            </div>
+            <!-- /.fullscreen -->
+
+            <div class="content">
+                <section class="generation">
+                    <div class="container">
+                        <div class="generation__block block">
+                            <div class="block__icon">
+                                <img src="img/icons/title/01.png" alt="icons-generation">
+                            </div>
+                            <!-- /.block__icon -->
+
+                            <h1 class="block__title">
+                                A NEW GENERATION OF vintage bike
+                            </h1>
+                            <!-- /.block__title -->
+
+                            <div class="block__text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque voluptate similique vero, illo in quod magnam sit explicabo nemo consequatur recusandae numquam beatae accusantium sunt esse voluptatum soluta id harum.
+                            </div>
+                            <!-- /.block__text -->
+                        </div>
+                        <!-- /.generation__block block -->
+                    </div>
+                    <!-- /.container -->
+                </section>
+                <!-- /.generation -->
+
+                <section class="brands">
+                    <div class="brands__row">
+                        <div class="brands__column brands__column_b">
+                            <a href="#" class="brands__item item">
+                                <span class="item__logo">
+                                    <img src="img/logos/01.png" alt="">
+                                </span>
+                                <!-- /.item__logo -->
+
+                                <span class="item__image ibg">
+                                    <img src="img/brands/01.jpg" alt="brand1">
+                                </span>
+                                <!-- /.item__image -->
+                            </a>
+                            <!-- /.brands__item -->
+                        </div>
+                        <!-- /.brands__column brands__column_b -->
+                        <div class="brands__column">
+                            <div class="brands__block block">
+                                <div class="block__icon">
+                                    <img src="img/icons/title/02.png" alt="icons-generation">
+                                </div>
+                                <!-- /.block__icon -->
+
+                                <h2 class="block__title">
+                                    vintage oliva
+                                </h2>
+                                <!-- /.block__title -->
+
+                                <div class="block__text block__text_j">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque voluptate similique vero, illo in quod magnam sit explicabo nemo consequatur recusandae numquam beatae accusantium sunt esse voluptatum soluta id harum.
+                                </div>
+                                <!-- /.block__text -->
+                            </div>
+                            <!-- /.brands__block block -->
+
+                            <div class="brands__image ibg">
+                                <img src="img/brands/02.jpg" alt="brand2">
+                            </div>
+                            <!-- /.brands__image -->
+                        </div>
+                        <!-- /.brands__column -->
+                    </div>
+                </section>
+                <!-- /.brands -->
+            </div>
+            <!-- /.content -->
+
+            @@include('_footer.html', {})
+            <!-- /.footer -->
+        </main>
+        <!-- /.page -->
+
+    </div>
+    <!-- /.wrapper -->
+
+    @@include('_popup.html', {})
+    <!-- /.popup -->
+
+
+    <!-- /.js -->
+
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
