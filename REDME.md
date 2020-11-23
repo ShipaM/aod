@@ -1,7 +1,7 @@
 <h1>AOD</h1>
 
 <p>
-	<img src="src/img/aod.png" alt="AOD">
+	<img src="#src/img/aod.png" alt="AOD">
 </p>
 
 <p>
