@@ -1,0 +1,80 @@
+//Слайдер 
+.slick-slider
+    position: relative
+    .slick-track, .slick-list
+    .slick-track
+        align-items: flex-start //прижимает наши слайды к верху устанавливается для adaptiveHeight: true
+        display: flex //выстраиваем наши слайды в ряд
+    .slick-list // Ограничивающая оболочка
+        overflow: hidden
+    .slick-slider
+    .slick-dots
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 100px 0 0 0
+        li
+            margin: 0 5px
+            button
+                font-size: 0 //скрываем кастомные кнопки
+                width: 11px
+                height: 11px
+                border-radius: 50%
+                border: 1px solid #c8c8c8
+                background: transparent
+                outline: none
+                cursor: pointer
+
+            &.slick-active
+                button
+                    background: #a9afb3
+
+// /* Слайдер запущен */
+//     &.slick-initialized
+
+// /* Слайдер с точками */
+//     &.slick-dotted
+
+// /* Ограничивающая оболочка */
+// .slick-list
+
+// /* Лента слайдов */
+// .slick-track
+
+// /* Слайд */
+// .slick-slide
+
+// /* Слайд активный (показывается) */
+//     &.slick-active
+
+// /* Слайд основной */
+//     &.slick-current
+
+// /* Слайд по центру */
+//     &.slick-center
+
+// /* Клонированный слайд */
+//     &.slick-cloned
+
+// /* Стрелка */
+// .slick-arrow
+
+// /* Стрелка влево */
+//     &.slick-prev
+
+// /* Стрелка вправо */
+//     &.slick-next
+
+// /* Стрелка не активная */
+//     &.slick-disabled
+
+// /* Точки (булиты) */
+// .slick-dots
+
+//     & li
+
+// /* Активная точка */
+//     & li.slick-active
+
+// /* Элемент точки */
+//     & li button

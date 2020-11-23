@@ -1,6 +1,8 @@
 
 @import "config"
 @import "header"
+@import "slider"
+@import "footer"
 
 .page
     position: absolute
@@ -111,6 +113,7 @@
         top: 0
         left: 0
         display: flex
+        flex-direction: column
         justify-content: center
         align-items: center
         z-index: 2
@@ -118,6 +121,14 @@
         opacity: 0
         visibility: hidden
         transition: all 0.3s ease 0s
+        span
+            font-size: 14px
+            font-weight: 700
+            letter-spacing: 2.8px
+            display: block
+            text-transform: uppercase
+            color: #fff
+            margin-bottom: 10px
     &:hover
         .item__logo
             opacity: 1
@@ -125,3 +136,146 @@
     @media ( max-width: 1100px )
         height: auto
         padding: 0 0 70% 0
+
+.brands
+    &_rev
+        .brands__column
+            order: 1
+        .brands__column
+            &_b
+                order: 2
+
+// .slider
+.slider
+    background-color: #f7f7f7
+    padding: 120px 0 160px 0
+    position: relative
+    &__item
+        text-align: center
+    &__icon //.slider__icon
+        margin: 0 0 35px 0
+    &__title // .slider__title
+        color: #353738
+        margin: 0 0 20px 0
+        font-size: 18px
+        font-weight: 700
+        text-align: center
+        span
+            font-weight: 300
+            color: #848789
+    &__text // .slider__text
+        text-align: center
+        color: #848789
+        font-size: 24px
+        font-style: italic
+        line-height: 34px
+
+.shop
+    &__body
+        display: flex
+    &__column
+        flex: 0 1 16.666%
+        &_b
+            flex: 0 1 33.333%
+    @media ( max-width: 1100px )
+        &__body //.shop__body
+            flex-wrap: wrap
+        &__column
+            flex: 0 1 50%
+            &:first-child
+                flex: 1 1 100%
+            &:last-child
+                flex: 1 1 100%
+        &__btn
+            padding: 0 30px
+        &__footer
+            padding: 50px 0
+    &__footer
+        background-color: #282f35
+        padding: 75px 0
+        text-align: center
+    &__btn
+        display: inline-block
+        height: 50px
+        line-height: 48px
+        border: 1px solid rgba(255, 255, 255, 0.5)
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        color: #fff
+        padding: 0 60px
+        letter-spacing: 2.8px
+
+.block-shop
+    display: flex
+    flex-direction: column
+    height: 100%
+    &__row
+        display: flex
+        &_r
+            order: 2
+    &__column
+        flex: 0 1 50%
+    &__item
+        height: auto
+        padding: 0 0 50% 0
+        &_r
+            order: 1
+        &_b
+            padding: 0 0 200.5% 0
+        &_l
+            padding: 0 0 100% 0
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+.subscribe
+    &__body
+        max-width: 534px
+        margin: 0 auto
+        text-align: center
+        padding: 110px 0
+    &__logo
+        margin: 0 0 39px 0
+    &__label
+        color: #848789
+        font-size: 24px
+        font-style: italic
+        margin: 0 0 35px 0
+    &__form
+        display: flex
+    &__input
+        flex: 1 1 auto //1 позволяем увеличиваться 1 позволяем уменьшаться
+        padding: 0 8px 0 0
+        .input
+            padding: 0 28px
+            width: 100%
+            height: 69px
+            border: 1px solid #d3d7d9
+            background-color: #fff
+            color: #929292
+            font-size: 20px
+            font-style: italic
+            line-height: 24px
+            &.focus
+                color: #333
+                font-style: normal
+            &.err
+                border: 1px solid red
+    &__button
+        flex: 0 0 126px //запрещаем меняться фиксированная ширина 126px
+    &__btn
+        width: 100%
+        height: 69px
+        line-height: 69px
+        color: #ffffff
+        background: #64c29e
+        font-weight: 300
+        text-transform: uppercase
+
+    @media  ( max-width: 750px)
+        &__body
+            padding: 50px 0
+    @media screen and ( max-width: 500px )
+        &__form
+            display: block
+        &__input
+            padding: 0 0 8px 0
